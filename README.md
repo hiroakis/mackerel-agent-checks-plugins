@@ -15,6 +15,7 @@ go get -d github.com/hiroakis/mackerel-agent-checks-plugins
 cd $GOPATH/src/github.com/hiroakis/mackerel-agent-checks-plugins
 make
 sudo make install
+# the binaries are installed to /usr/local/bin
 ```
 
 If you would like to use on other OS, you can edit TARGET_OSARCH in Makefile.
@@ -37,6 +38,12 @@ mackerel-check-port -host=127.0.0.1 -port=11211 -level=warn
 
 ```
 mackerel-check-mysql-replication -host=127.0.0.1 -port=3306 -username=USER -password=PASSWORD -warn=5 -crit=10
+```
+
+## mackerel-check-mysql-connection
+
+```
+mackerel-check-mysql-connection -host=127.0.0.1 -port=3306 -username=USER -password=PASSWORD -warn=250 -crit=280
 ```
 
 # LICENSE
