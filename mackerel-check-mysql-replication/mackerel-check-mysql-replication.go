@@ -10,8 +10,8 @@ import (
 
 const (
 	OK       = 0
-	CRITICAL = 1
-	WARNING  = 2
+	WARNING  = 1
+	CRITICAL = 2
 	UNKNOWN  = 3
 )
 
