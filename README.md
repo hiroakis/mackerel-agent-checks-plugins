@@ -8,12 +8,13 @@ Details are following links
 * English: http://help.mackerel.io/entry/custom-checks
 * Japanese: http://help-ja.mackerel.io/entry/custom-checks
 
-# Build
+# Build and install
 
 ```
-git clone git@github.com:hiroakis/mackerel-agent-checks-plugins.git
-cd mackerel-agent-checks-plugins
+go get -d github.com/hiroakis/mackerel-agent-checks-plugins
+cd $GOPATH/src/github.com/hiroakis/mackerel-agent-checks-plugins
 make
+sudo make install
 ```
 
 If you would like to use on other OS, you can edit TARGET_OSARCH in Makefile.
@@ -23,13 +24,13 @@ If you would like to use on other OS, you can edit TARGET_OSARCH in Makefile.
 ## mackerel-check-proc
 
 ```
-mackerel-check-proc -name ntpd -critunder 1 -critover 1 -warnunder 1 -warnover 1
+mackerel-check-proc -name=ntpd -critunder=1 -critover=1 -warnunder=1 -warnover=1
 ```
 
 ## mackerel-check-port
 
 ```
-mackerel-check-port -host localhost -port 11211 -level warn
+mackerel-check-port -host=127.0.0.1 -port=11211 -level=warn
 ```
 
 ## mackerel-check-mysql-replication
