@@ -46,6 +46,12 @@ mackerel-check-mysql-replication -host=127.0.0.1 -port=3306 -username=USER -pass
 mackerel-check-mysql-connection -host=127.0.0.1 -port=3306 -username=USER -password=PASSWORD -warn=250 -crit=280
 ```
 
+## mackerel-check-ntpoffset
+
+```
+mackerel-check-ntpoffset -warn=50 -crit=100
+
+```
 # LICENSE
 
 MIT.
