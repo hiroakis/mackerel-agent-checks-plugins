@@ -1,5 +1,7 @@
 # mackerel-agent-checks-plugin
 
+**This repository is not updated no longer. Because some plugins are merged to official plugins(https://github.com/mackerelio/go-check-plugins)**
+
 These scripts are used as mackerel-checks-plugins that are defind `[plugin.checks.xxxx]` in mackerel-agent.conf.
 You also can use these scripts as nagios plugin and sensu plugin. The specification of these scripts are same as nagios plugin and sensu plugin. (Note: I didn't do testing on Nagios and Sensu)
 
